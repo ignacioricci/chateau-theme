@@ -1,0 +1,223 @@
+/*
+
+Theme Name: Chateau
+Dark Theme
+                     -.                       .-
+                 _..-'(                       )'-.._
+              ./'. '!!\\.       (\_/)       .//!!' .'\.
+           ./'.!'.'!!!!\\!..    ). .(     ..!//!!!!'.'!.'\.
+        ./'..!'.!! !!!!!\'''''' '''' ''''''/!!!!! !!.'!..'\.
+      ./'.!!'.!!!! !!!!!!!!!!!!.     .!!!!!!!!!!!! !!!!.'!!.'\.
+     /'!!!'.!!!!!! !!!!!!!!!!!!{     }!!!!!!!!!!!! !!!!!!.'!!!'\
+    '.!!!'.!!!!!!! !!!!!!!!!!!!{     }!!!!!!!!!!!! !!!!!!!.'!!!.'
+   '.!!! !!!!!!!!! !/'   ''\!!''     ''!!/''   '\! !!!!!!!!! !!!.'
+   !/' \./'     '\./         \!!\   /!!/         \./'     '\./ '\!
+   V    V         V          }' '\ /' '{          V         V    V
+   '    '         '               V               '         '    '
+
+*/
+
+/*- General Styles ---------------------------------------------------------*/
+
+
+		html {border-top-color:#FFD579;}
+		body {color:#CCC; background:#111; border-top-color:#DFBA69;}
+		
+			
+			#dark .postTitle h2 a:hover,
+			#dark .postInfo p a:hover,
+			#dark .postExtras p a:hover,
+			#dark .morePosts h4 a:hover {color:#FFF;}
+		
+		
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- End Header -------------------------------------------------------------*/
+
+		
+		#menu a {color:#888; border-color:#111;}
+		#menu .current_page_item a,
+		#menu .current_page_parent .current_page_item a {color:#F5C33B; border-top-color:#555; border-bottom-color:#666;}
+		
+		/*- Sub Menu -*/
+		#menu li ul {color:#999;}		
+		#menu .current_page_item li a,
+		#menu .current_page_parent a {color:#FFF; font-weight:bold; border-top-color:#999; border-bottom-color:#777;}
+				
+		#mainTitle h1 strong {color:#FFF;}
+			#mainTitle h1 span {color:#CCC;}
+			#mainTitle h1 a:hover span {color:#FAFAFA;}
+			#mainTitle h1 a:hover strong {color:#F5C33B;}
+					
+		#mainImage {border-color:#444;}
+			#mainImage img {border-color:#000;}
+			
+		#search {}
+			#search #s {background:#222; border-color:#333;}
+			#search #s:focus {color:#FFF;}
+			
+			
+/*- Header -----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Central ----------------------------------------------------------------*/
+		
+		
+		/*--------------------------------------*/
+		/*	CONTENT								*/
+		/*--------------------------------------*/
+		
+		#content {border-color:#222 !important;}
+		
+			.single .post {border-color:#222;}
+			
+			/*- The Post -*/	
+			.postInfo p {color:#666;}
+			.postInfo p a {color:#999;}
+		
+			.postDate {}
+				.postDate strong,
+				.postDate em {color:#999;}
+				.postDate em {background:#111;}
+				.postDate span {color:#666;}
+		
+			.postExtras p {color:#666;}
+			.postExtras strong {color:#999; border-color:#666;}
+			.postExtras p a {color:#666;}
+			.postExtras .post-edit-link {color:#F5C33B;}
+			.postExtras .shareTwitter a {color:#D5FFF6;}
+			.postExtras .shareFacebook a {color:#AEDAFF;}
+			.postExtras .shareLinkedin a {color:#AAFFEA;}
+		
+			.postTitle h2 {color:#F5C33B; border-color:#333;}
+			.postTitle h2 a {color:#F5C33B;}
+			
+			.postEntry p {color:#DDD;}
+				.postEntry a {color:#DFBA69;}
+				.postEntry a:hover {color:#000; text-decoration:none; background:#FFF;}			
+				.postEntry blockquote {border-color:#3D3636;}
+				.postEntry blockquote p:first-child {border-color:#564C4C;}
+				.postEntry blockquote p {color:#A19090;}			
+				.postEntry pre {background:#222; color:#D4F7BD;}
+				.postEntry h1 {color:#F5C33B;}
+				.postEntry h2,
+				.postEntry h3,
+				.postEntry h4,
+				.postEntry h5,
+				.postEntry h6 {color:#FFF;}
+				
+			.postEntry img {border-color:#444 #333 #444 #333; -moz-box-shadow:3px 3px 9px #333; -webkit-box-shadow:3px 3px 9px #333; box-shadow:3px 3px 9px #333;}
+			.postEntry .gallery a:hover {background:none;}
+			.postEntry .gallery a:hover img {border-color:#999 #666 #999 #666;}
+							
+			/*- Archive -*/		
+			.morePosts h3 {color:#888; border-color:#333;}			
+				.morePosts h4 a {color:#F5C33B;}
+				.morePosts span {color:#CCC; border-color:#332C17;}
+				.morePosts p {color:#FFF;}
+				.morePosts span {color:#999;}
+				.morePosts p a {color:#DFBA69;}
+				.morePosts p a:hover {color:#E7C16E; background:#302F2D;}	
+				.morePosts h3 em {color:#FFF;}		
+				
+			/*- Comments -*/				
+			#comments h3 {color:#999; border-color:#333;} 
+				#comments h3 span {background:#111;}
+				
+			#comments li {border-color:#333;}
+				.commentAuthor {color:#CCC;}
+				.commentText {border-top-color:#333; border-bottom-color:#222;}
+				.commentText p {color:#666;}
+				.commentDate {color:#444;}
+				#comments .commentAuthor a,
+				#comments .commentAuthor a:hover,
+				#comments .commentText .replyLink a,
+				#comments .commentText .replyLink a:hover 
+				#comments .commentText .editComment a,
+				#comments .commentText .editComment a:hover {color:#FFF !important;}
+				#comments li.byuser .commentAuthor {color:#F5C33B; font-weight:bold;}
+				#comments li.byuser .commentText {border-top-color:#332C17;}	
+				
+			#respond h3 {color:#F5C33B; border-color:#332C17;}
+				#respond input,
+				#respond textarea {background:#222; border-color:#333;}
+				#respond input:focus,
+				#respond textarea:focus {color:#FFF;}
+				#respond label span {color:#B18E2E;}
+				#respond button {background:#DDD; border:2px solid #999;}
+				#respond button span {color:#666; text-shadow:1px 1px rgba(255,255,255,0.4);}
+				#respond button:hover {background:#FFF !important; border-color:#666 !important;}
+				#respond button:hover span {color:#000 !important;}		
+				#respond p a,
+				#respond p a:hover {color:#FFF;}	
+				
+		/*--------------------------------------*/
+		/*	SIDEBAR								*/
+		/*--------------------------------------*/
+		
+		.sidebar-item li {border-color:#222; color:#333;}
+		.sidebar-item a {color:#666;}
+		.sidebar-item a:hover {color:#FFF;}
+		
+		/*- Calendar Widget -*/
+		#calendar_wrap {}
+			#calendar_wrap caption {background:#333; border-color:#444;}
+			#calendar_wrap table {border-color:#444;}
+			#calendar_wrap table th {color:#999; border-color:#333;}
+			#calendar_wrap table td {color:#8D8767;}
+			#calendar_wrap table td a {color:#F5C33B;}
+			#calendar_wrap table td a:hover {color:#FFF;}
+			#calendar_wrap table tfoot td {border-color:#222;}
+				
+
+/*- End Central ------------------------------------------------------------*/			
+/*-----------------------------------------------------------------------------------------------*/
+/*- Footer -----------------------------------------------------------------*/
+		
+		
+		#footer {background:#3B1E1E; border-top-color:#472B2B;}
+		
+			#aboutInfo {border-color:#4F3535;}
+				#aboutInfo h4 {color:#FFF;}
+				#welcomeMsg {color:#97927E;}
+				#welcomeMsg a {color:#C0B77C;}
+			
+			#siteMap {border-color:#432727;}		
+				.siteMap-item h5 {color:#EEE;}
+				.siteMap-item li {color:#999;}
+				.siteMap-item li a {color:#CCC;}
+				.siteMap-item li a:hover {color:#E1DD94;}
+				
+				#siteMap #calendar_wrap table {background:#351B1B;}
+					#siteMap #calendar_wrap caption {background:#584040; color:#CCC; border-color:#584040;}
+					#siteMap #calendar_wrap table {border-color:#492E2E;}
+					#siteMap #calendar_wrap table th {color:#999; border-color:#492E2E;}
+					#siteMap #calendar_wrap table td {color:#666;}
+					#siteMap #calendar_wrap table td a {color:#FFF;}
+					#siteMap #calendar_wrap table td a:hover {color:#FFF;}
+					#siteMap #calendar_wrap table tfoot td {border-color:#492E2E;}
+					
+				#siteMap #s {background:#351B1B; color:#999; padding:3px 5px; border:1px solid #584040;}
+				#siteMap #s:focus {color:#FFF; border-color:#777;}
+				
+			#copyright {background:#291515; border-color:#0D0606;}
+				#copyright p {color:#4D4040;}
+				#copyright p a {color:#635858;}
+				#copyright p a:hover {color:#908888; border-color:#908888;}
+			
+
+/*- End Footer -------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/		
+
+/*- Error 404 --------------------------------------------------------------*/
+
+
+		#error404 {}
+			#error404 h2 {color:#FFF;}
+			#error404 p {color:#CCC;}
+			#error404 em {color:#666;}
+			#error404 a {color:#DDD;}
+			#error404 a:hover {color:#FFF;}
+		
+		
+/*- End Error 404 ----------------------------------------------------------*/

@@ -1,0 +1,28 @@
+/*
+Theme Name: Chateau
+Print styles
+*/
+
+	body {background:white; border:0;}
+
+		/*- Reset and hide unnecessary stuff -*/
+		#menu, #search, #mainImage, #sidebar, .postInfo, .postExtras, .more-link, #relatedPosts, #aboutInfo, #siteMap, #respond {display:none;}
+		#header, #main, #mainTitle, #mainTitle h1, #footer {float:none !important; width:auto; margin:0 5%; padding:0; border:0; color:black; background:transparent;}
+		
+		/*- Blog Title -*/
+		#mainTitle {text-align:center; padding-bottom:20px;}
+		#mainTitle h1 {font-family:Verdana, Arial, sans-serif; font-size:8pt; font-weight:normal;}
+	
+		/*- Links -*/
+		a {color:#000; text-decoration:none;}
+	
+		/*- The post -*/
+		.postTitle h2 {font-size:30pt;}
+		.postInfo {font-size:8pt;}
+		.postEntry p {font-size:12pt; line-height:15pt;}
+		.postEntry a {text-decoration:underline; font-style:italic;}
+		.postEntry a:link:after,
+		.postEntry a:visited:after {content:" [" attr(href) "] ";}
+	
+		/*- Footer -*/
+		#copyright {padding:5px 0; font-size:10pt; background:none; border-top:1px solid #CCC;}

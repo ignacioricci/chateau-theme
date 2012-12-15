@@ -1,0 +1,493 @@
+/*
+Theme Name: Chateau
+Theme URI: http://chateau-theme.com
+Description: Chateau is a lightweight & minimalistic WordPress Theme. It's elegant and focuses on your content.
+Version: 2.0.2
+Author: Ignacio Ricci
+Author URI: http://ignacioricci.com
+Tags: white, red, black, clean, chateau
+*/
+
+/*- Reset Styles -----------------------------------------------------------*/
+	
+	
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, 
+		cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+		ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button
+		{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align: baseline; background:transparent;}
+		
+		ol, ul {list-style:none;}
+		h1, h2, h3, h4, h5, h6, li {line-height:100%;}
+		blockquote, q {quotes:none;}
+		table {border-collapse:collapse; border-spacing:0;}
+		input, textarea, button {font-family:inherit; font-size:1em;}
+		textarea {overflow:auto;}
+		
+
+/*- End Reset Styles -------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- General Styles ---------------------------------------------------------*/
+
+
+		body {font:76% Verdana, Arial, Helvetica, sans-serif; color:#000; background:#FFF; border-top:4px solid #990000;}
+		
+			/*- Resolution -*/
+			#header,
+			#main,
+			#aboutInfo,
+			#siteMapList,
+			#copyright p {width:960px; margin:0 auto;}
+			
+			/*- Links -*/
+			a {text-decoration:none;}
+			
+			/*- Accesible Labels -*/
+			.accesible {width:1px; height:1px; overflow:hidden; position:absolute; top:0; left:-9999px; z-index:1;}
+			
+			/*- Float clears -*/
+			#main,
+			.postInfo,
+			.postContent,
+			.postExtras,
+			.morePosts ul,
+			.commentHeading,
+			#respond p,
+			#aboutInfo,
+			#siteMapList,
+			#pageNavigation {overflow:hidden;}
+			
+			/*- Disable Webkit blue focus -*/
+			input:focus,
+			textarea:focus {outline:0;}
+
+			/*- Serif font -*/
+			#mainTitle,
+			.postTitle h2,
+			.postDate,
+			.postExtras strong,
+			.postEntry h3,
+			.postEntry blockquote,
+			.postEntry cite,
+			.morePosts h3,
+			.morePosts h4,
+			.morePosts span,
+			#comments h3,
+			#respond h3,
+			#aboutInfo,
+			#error404 {font-family:Adobe Garamond Pro, Garamond, Palatino, Palatino Linotype, Times, Times New Roman, Georgia, serif;}
+
+			/*- CSS3 -*/
+			#menu .menuHover {border-radius:3px 3px 0 0;}
+			#menu .sub-menu,
+			#menu .children {box-shadow:rgba(0,0,0,0.2) 0 0 1px;}
+
+
+/*- End General Styles -----------------------------------------------------*/	
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Header -----------------------------------------------------------------*/
+
+
+		#header {}
+			
+			/*- Menu -*/
+			#menu {float:right; padding:30px 0 40px;}
+				#menu li {float:left; margin-right:10px; padding-bottom:10px; text-transform:uppercase; position:relative;}
+				#menu a {display:block; font-size:0.9em; color:#999; padding:5px 10px 7px; border:1px solid #FFF;}
+				#menu a:hover {color:#000;}
+				#menu .current_page_item a,
+				#menu .current_page_parent .current_page_item a {font-weight:bold; color:#B34040; border-top-color:#DDD; border-bottom-color:#CCC;}
+				
+				/*- Sub Menu -*/
+				#menu .sub-menu,
+				#menu .children {color:#CCC; display:none; position:absolute; top:25px; left:0; width:160px; background:#FFF; border:1px solid #CCC; border-bottom:0; z-index:1;}
+				#menu .menuHover {color:#000; background:#F5F5F5; border:1px solid #CCC;}
+				#menu li li {float:none; position:static; text-transform:none; padding:0; margin:0;}
+				#menu li li a {color:#333; padding:8px; border:0; border-bottom:1px solid #DDD;}		
+				#menu li li a:hover {color:#333; background:#FFFFE5; border-color:#CCC;}
+				#menu .current_page_item li a,
+				#menu .current_page_parent a {color:#333; font-weight:bold; border-top-color:#DDD; border-bottom-color:#CCC;}
+				#menu .current_page_item li a,
+				#menu .current_page_parent li a {font-weight:normal !important;}
+
+			/*- Blog Name and Tagline -*/
+			#mainTitle {clear:both; float:left; width:700px; font-style:italic; margin-bottom:20px;}
+				#mainTitle h1 strong {font-size:3.2em; color:#000;}
+				#mainTitle h1 span {font-size:2.6em; font-weight:normal; line-height:120%; color:#555;}
+				#mainTitle h1 a:hover strong {color:#990000;}
+				#mainTitle h1 a:hover span {color:#333;}
+				
+			/*- Search -*/
+			#search {float:right; width:205px; margin:5px 15px 20px 0;}
+				#search #s {color:#777; font-style:italic; padding:3px 5px; width:150px; border:1px solid; border-color:#DDD #DDD #CCC #CCC;}
+				#search #s:focus {color:#000; border-color:#CCC #CCC #B0B0B0 #B0B0B0; -moz-box-shadow:0 0 5px #CCC; -webkit-box-shadow:0 0 5px #CCC; box-shadow:0 0 5px #CCC;}
+		
+			/*- Header Image -*/
+			#mainImage {clear:both; padding:20px 0; border-top:1px dotted #DDD;}	
+				#mainImage img {display:block; border:1px solid #DDD;}
+				
+
+/*- End Header -------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Main section -----------------------------------------------------------*/
+
+		
+		#main {}
+		
+		/*--------------------------------------*/
+		/*	CONTENT								*/
+		/*--------------------------------------*/
+		
+		#content {float:right; width:728px; padding:25px 0 70px 20px; border-left:3px double #DDD;}
+			
+			/*- THE POST -*/
+			.post {}
+			.single .post {border-bottom:1px solid #DDD;}
+			.page .postTitle h2 {padding-left:78px;}
+			.page .postEntry {width:630px;}
+
+				/*- Post Title -*/
+				.postTitle {padding:0 0 20px; position:relative;}	
+					
+					/*- The name of the post -*/
+					.postTitle h2 {font-size:3em; font-weight:normal; font-style:italic; color:#990000; padding:6px 0 16px 178px; border-bottom:1px solid #DDD;}
+						.postTitle h2 a {color:#990000;}
+						.postTitle h2 a:hover {text-decoration:underline;}
+			
+					/*- Post Date -*/
+					.postDate {text-align:center; font-style:italic; line-height:1.9em; position:absolute; top:15px; left:30px; z-index:1;}
+						.postDate * {display:block; padding:0 15px; position:relative;}
+						.postDate strong {font-size:4.9em; font-weight:normal; letter-spacing:-0.12em;}
+						.postDate em {font-size:1.9em; background:#FFF; top:9px;}
+						.postDate span {font-size:1.1em; color:#555; top:4px; font-variant:small-caps;}
+					
+					/*- Post Information (Author, category and comment number) -*/
+					.postInfo {padding:10px 20px 0 178px; font-variant:small-caps; color:#555;}
+						.postInfo p {float:left; width:400px;}
+						.postInfo a {color:#675F34;}
+						.postInfo .postComCount {float:right; width:130px; text-align:right;}
+						.postInfo .postComCount a {color:#555;}
+						.postInfo a:hover {color:#000; text-decoration:underline;}
+				
+				/*- The post's content -*/	
+				.postContent {}
+				
+					/*- Tags and Share -*/
+					.postExtras {float:left; color:#333; font-style:italic; width:140px; line-height:170%; text-align:right; padding:61px 0 50px;}
+						.postExtras p,
+						.postExtras li {float:right; clear:both; font-size:0.9em; padding-bottom:8px; width:100px;}
+						.postExtras ul {clear:both; padding-top:5px;}
+						.postExtras strong {float:right; font-weight:normal; font-size:1.6em; border-bottom:1px solid #DDD; margin-top:15px;}
+						.postExtras .post-edit-link {color:#990000;}
+						.postExtras p a {color:#333;}
+						.postExtras a:hover {color:#000; text-decoration:underline;}
+						.postExtras .shareTwitter a {color:#3D85BD;}
+						.postExtras .shareFacebook a {color:#264061;}
+						.postExtras .shareLinkedin a {color:#29A6B2;}
+				
+					/*- The post's text -*/
+					.postEntry {float:right; width:530px; padding:15px 20px 30px 0;}
+			
+						/*- Headings -*/
+						.postEntry h1,
+						.postEntry h2,
+						.postEntry h3,
+						.postEntry h4,
+						.postEntry h5,
+						.postEntry h6 {text-transform:uppercase; padding:10px 0;}
+						.postEntry h1 {color:#900; text-transform:none; font-size:1.5em; font-weight:normal; padding-bottom:15px;}
+						.postEntry h1:before {content:"◊ ";}
+						.postEntry h2 {color:#675F34; font-size:1.5em; font-weight:bold; text-transform:none; font-variant:small-caps; padding:0 10px 5px 0; margin:10px 0; border-bottom:1px dotted #CCC;}
+						.postEntry h3 {font-size:1.2em;}
+						.postEntry h4 {color:#000; font-size:0.8em; letter-spacing:0.2em;}
+						.postEntry h5,
+						.postEntry h6 {color:#333; font-size:0.8em; font-weight:normal}				
+				
+						/*- Paragraphs and Lists -*/
+						.postEntry p:first-child:first-line {text-transform:uppercase;}
+						.postEntry p,
+						.postEntry li {color:#333; font-size:1.05em;}
+						.postEntry p {line-height:180%; padding-bottom:20px;}
+						.postEntry li {line-height:140%; padding-bottom:15px;}
+						.postEntry li ol,
+						.postEntry li ul {margin:5px 0 0;}
+						.postEntry li li {margin-left:15px; padding-bottom:5px; font-size:90%; }
+						.postEntry ul,
+						.postEntry ol {margin:0 0 10px;}
+						.postEntry ul {list-style:circle;}
+						.postEntry ol {list-style:lower-roman;}
+						
+						/*- Links -*/
+						.postEntry a {color:#990000; text-decoration:underline;}
+						.postEntry a:hover {color:#000;}
+						.postEntry .more-link {color:#000; font-weight:bold; font-style:italic; text-decoration:underline; border-bottom:none;}
+						.postEntry .more-link:hover {color:#990000;}
+						
+						/*- Images -*/
+						.postEntry img {max-width:526px; height:auto; padding:3px; border:1px solid; border-color:#DDD #CCC #CCC #DDD; position:relative; left:-4px; -moz-box-shadow:3px 3px 9px #CCC; -webkit-box-shadow:3px 3px 9px #CCC; box-shadow:3px 3px 9px #CCC;}
+						.postEntry .wp-smiley {padding:0; border:0; position:static; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none;} 
+						.postEntry .alignleft {float:left; margin:20px 20px 10px 0;}
+						.postEntry .alignright {float:right; margin:20px 0 10px 20px;}
+						.postEntry .aligncenter {display:block; margin:20px 0 20px 115px;}
+						
+						/*- Pre (Code) -*/
+						.postEntry pre {background:#EEE; padding:20px; margin-bottom:20px; font-family:Monaco, Courier New, Courier, monospace;}
+						
+						/*- Blockquote -*/
+						.postEntry blockquote {padding:2px 0 0; margin-bottom:15px; border-top:1px solid #B3AF99; border-bottom:1px solid #CAC7B8;}
+							.postEntry blockquote p:first-child {border-top:1px solid #CAC7B8;}
+							.postEntry blockquote p:first-child:first-line {text-transform:none;}
+							.postEntry blockquote p:first-child:before {content:"“";}
+							.postEntry blockquote p:last-child:after {content:"”";}
+							.postEntry blockquote p {color:#665F33; font-style:italic; font-size:1.7em; line-height:130%; padding:20px; border-right:1px solid #B3AF99;}
+							
+						/*- Cite -*/
+						.postEntry cite {display:block; text-align:right; font-size:1.4em; color:#666; padding:15px 20px 20px;}
+				
+						/*- Gallery -*/
+						.postEntry .gallery {padding:0 0 0 4px;}
+							.postEntry .gallery-item {float:left; margin:0 20px 20px 0;}
+							.postEntry .gallery-item a {display:block;}
+							.postEntry .gallery-item img {width:75px; height:75px;}
+							.postEntry .gallery-item a:hover img {border-color:#CCC #999 #CCC #999;}
+				
+			/*----------------------*/
+			/*	MORE POSTS			*/
+			/*----------------------*/
+			
+			.morePosts {}
+				.morePosts h3 {text-transform:uppercase; color:#666; letter-spacing:0.15em; word-spacing:0.3em; padding:20px 0 18px 178px; border-top:1px solid #DDD; border-bottom:1px solid #DDD;}
+				.morePosts h3 em {color:#990000;}
+				.morePosts ul {padding:35px 0 0 162px;}
+					.morePosts li {float:left; width:263px; min-height:160px; color:#333; margin: 0 20px 20px 0;}
+					.morePosts h4 {font-size:2em; font-weight:normal; padding:0 15px 3px; line-height:110%;}
+					.morePosts span {display:block; padding:3px 15px 7px; text-transform:uppercase; border-bottom:1px solid #DDD; margin-bottom:10px;}
+					.morePosts p {font-size:0.9em; line-height:160%; padding:0 15px 5px 15px;}
+					.morePosts p a {text-decoration:underline; font-style:italic;}
+					.morePosts a {color:#000;}
+					.morePosts a:hover {color:#990000; text-decoration:underline;}
+					
+				.simpleArchive {}
+					.simpleArchive li {float:none; min-height:0; width:auto; margin-bottom:35px;}
+								
+			/*----------------------*/
+			/*	COMMENT LIST		*/
+			/*----------------------*/
+			
+			#comments {padding-bottom:30px;}
+				
+				/*- Title -*/
+				#comments h3 {text-transform:uppercase; color:#000; letter-spacing:0.15em; padding:20px 0 18px 60px; margin:3px 0 25px 118px; border-bottom:1px solid #CCC; position:relative;}
+					#comments h3 span {font-size:4.9em; font-weight:normal; font-style:italic; padding:10px; background:#FFF; position:absolute; bottom:-10px; left:-85px; z-index:1; text-align:right; width:95px;}
+				
+				/*- Comment list -*/
+				#comments ol {padding-bottom:20px;}
+				#comments li {padding:10px 0 0; margin-left:148px; border-top:4px solid #EEE;}
+				#comments li:first-child {border-top:0;}
+				#comments li a:hover {color:#990000; text-decoration:underline;}
+				
+					/*- Comment Heading -*/
+					.commentHeading {padding:2px 30px 10px;}
+						/*- Author -*/
+						.commentAuthor {float:left; color:#000;}
+							.commentAuthor img,
+							.commentAuthor span,
+							.commentAuthor em {float:left; margin-top:3px;}
+							.commentAuthor img {margin:0 10px 0 0;}
+							.commentAuthor em {margin-left:5px;}
+							.commentAuthor a {color:#000; text-decoration:underline;}
+						/*- Date -*/
+						.commentDate {float:right; font-size:0.9em; padding-top:3px;}
+							.commentDate {color:#999;}
+	
+					/*- Text -*/
+					.commentText {padding:15px 30px 5px; border-top:1px dotted #CCC; border-bottom:1px solid #EEE;}
+						.commentText p {line-height:170%; color:#333; padding-bottom:10px;}
+						.commentText p a {color:#990000; border-bottom:1px dotted;}
+						.commentText p a:hover {color:#000 !important; text-decoration:none !important; border-style:solid;}
+						.commentText .replyLink a {color:#000; font-weight:bold; font-size:0.8em; text-transform:uppercase; text-decoration:underline border:0;}
+						.commentText .replyLink a:hover {color:#990000;}
+						.commentText .editComment {font-size:0.8em; margin-top:-8px;}
+						.commentText .editComment a {border:0; color:#666;}
+						
+					/*- Nested list styles */
+					#comments li .children li {border-top:0;}
+					#comments li.depth-2,
+					#comments li.depth-3 {margin-left:80px;}
+					#comments li.byuser .commentAuthor {color:#990000; font-weight:bold;}
+					#comments li.byuser .commentText {border-top-color:#B8B8B8;}	
+					
+			/*----------------------*/
+			/*	RESPOND				*/
+			/*----------------------*/
+			
+			#respond {padding:18px 0 0 148px;}
+			
+				/*- Title -*/
+				#respond h3 {text-transform:uppercase; color:#990000; letter-spacing:0.15em; padding:0 0 18px 30px; border-bottom:1px solid #CCC; position:relative;}
+			
+				/*- Form -*/
+				#respond form {padding:28px 30px 30px;}
+					#respond p {padding:2px 0 14px;}
+					#respond p a {color:#990000;}
+					#respond p a:hover {color:#000; text-decoration:underline;}
+					#respond label,
+					#respond input,
+					#respond textarea {float:left;}
+					#respond input {width:280px;}
+					#respond textarea {width:400px; height:130px; overflow:auto;}
+					#respond input,
+					#respond textarea {padding:5px; color:#666; border:1px solid; border-color:#CCC #CCC #B2B2B2 #B2B2B2;}
+					#respond input:focus,
+					#respond textarea:focus {color:#000; -moz-box-shadow:0 0 5px #CCC; -webkit-box-shadow:0 0 5px #CCC; box-shadow:0 0 5px #CCC;}
+					#respond label {padding:7px 10px 0 0; width:80px; text-transform:uppercase; font-size:0.8em;}
+					#respond label span {color:#B34040;}
+					#respond button {float:left; text-shadow:1px 1px rgba(0,0,0,0.3); margin-left:90px; background:#666; border:2px groove #333; cursor:pointer;}		
+					#respond button span {display:block; color:#FFF; font-size:0.9em; letter-spacing:-0.02em; text-transform:uppercase; font-weight:bold; padding:4px 10px;}
+					#respond button:hover {background:#990000; text-shadow:1px 1px rgba(0,0,0,0.4); border-color:#710504;}	
+					#respond .cancel-comment-reply {padding-bottom:25px;}
+					
+		/*--------------------------------------*/
+		/*	SIDEBAR								*/
+		/*--------------------------------------*/
+				
+		#sidebar {float:left; width:189px; padding:34px 0 90px;}
+		
+			/*- Each sidebar box -*/
+			.sidebar-item {padding-bottom:25px;}
+				.sidebar-item h3 {color:#8D8767; font-size:0.8em; text-transform:uppercase; letter-spacing:0.1em; padding-bottom:10px;}
+				.sidebar-item li {list-style:inside square; font-size:0.9em; color:#DDD; padding:8px 0 10px; border-bottom:1px solid #DDD;}
+				.sidebar-item a {color:#333;}
+				.sidebar-item a:hover {color:#000; text-decoration:underline;}
+				.sidebar-item a:active {color:#990000;}
+				
+			/*- Subscribe box -*/
+			#subscribeItem {}
+				#subscribeItem h3 {color:#C9774A;}
+				
+			/*- Recent comments -*/
+			#recentComments {}
+				#recentComments em {display:block; padding:6px 0 0 12px; color:#999;}
+				#recentComments a:hover em {text-decoration:underline;}
+			
+			/*- CSS FOR WIDGETS -*/		
+			/*- Text widget -*/
+			.sidebar-item p {font-size:0.9em; color:#333; padding:10px; line-height:130%;}	
+
+			/*- Search -*/
+			.sidebar-item #s {width:120px;}
+				
+			/*- Calendar Widget -*/
+			#calendar_wrap {}
+				#calendar_wrap caption {padding:3px 0; background:#EEE; border:1px solid #CCC; border-bottom:0;}
+				#calendar_wrap table {width:187px; font-size:0.9em; border:1px solid #CCC;}
+				#calendar_wrap table th {text-align:center; padding:5px 0; color:#333; border-bottom:1px solid #DDD;}
+				#calendar_wrap table td {text-align:center; padding:4px 0; color:#666;}
+				#calendar_wrap table td a {color:#990000; text-decoration:underline;}
+				#calendar_wrap table td a:hover {color:#000;}
+				#calendar_wrap table tfoot td {padding:5px 6px 12px;}
+				#calendar_wrap table tfoot #prev {text-align:left;}
+				#calendar_wrap table tfoot #next {text-align:right;}
+				#calendar_wrap table tfoot td {padding-top:10px; border-top:1px solid #DDD;}			
+				
+		/*--------------------------------------*/
+		/*	PAGE NAVIGATION						*/
+		/*--------------------------------------*/
+		
+		#pageNavigation {padding:0 20px 0 172px;}
+			#pageNavigation p {}
+			#pageNavigation a {display:block; color:#666; padding:3px 10px; background:#EEE; border:1px solid; border-color:#DDD #CCC #CCC #DDD;}
+			#pageNavigation a:hover {color:#000; border-color:#CCC #999 #999 #CCC;}
+			#pageNavigation a:active {color:#990000;}
+			#prevPosts {float:left;}
+			#nextPosts {float:right;}
+
+
+/*- End Main section -------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Footer -----------------------------------------------------------------*/
+
+
+		#footer {background:#000; border-top:2px double #333;}
+		
+			/*- About information -*/
+			#aboutInfo {font-style:italic; padding:35px 0; border-bottom:1px dotted #1A1A1A;}
+				#aboutInfo h4 {float:left; width:200px; color:#FFF; font-size:3.4em; font-weight:normal; letter-spacing:-0.03em;}
+				#welcomeMsg {float:right; width:650px; padding-right:100px; color:#666; font-size:1.8em; line-height:140%;}
+				#welcomeMsg a {color:#999;}
+				#welcomeMsg a:hover {color:#FFF; text-decoration:underline;}
+				#welcomeMsg .textwidget {display:inline;}
+				
+			
+			/*- Sitemap -*/			
+			#siteMap {padding:35px 0 30px; border-bottom:1px solid #222;}
+				#siteMapList {}			
+					.siteMap-item {float:right; width:177px; color:#888; min-height:50px; margin:0 10px 20px 0;}
+						.siteMap-item h5 {color:#FFF; text-transform:uppercase; font-weight:normal; font-size:0.8em; letter-spacing:0.1em; padding-bottom:15px;}
+						.siteMap-item li {list-style:inside disc; color:#666; font-size:0.9em; margin-bottom:7px;}
+						.siteMap-item li a {color:#888;}
+						.siteMap-item li a:hover {color:#FFF; text-decoration:underline;}
+						.siteMap-item #wp-calendar {width:170px;}
+						.siteMap-item #s {width:100px;}
+						
+					.siteMap-item li ul li {font-size:1em; padding:7px; list-style:inside circle;}
+						
+				#siteMap #calendar_wrap table {background:#111;}
+					#siteMap #calendar_wrap caption {background:#222; color:#888; border-color:#222;}
+					#siteMap #calendar_wrap table {border-color:#222;}
+					#siteMap #calendar_wrap table th {color:#999; border-color:#222;}
+					#siteMap #calendar_wrap table td {color:#666;}
+					#siteMap #calendar_wrap table td a {color:#FFF;}
+					#siteMap #calendar_wrap table td a:hover {color:#FFF;}
+					#siteMap #calendar_wrap table tfoot td {border-color:#222;}
+						
+				#siteMap #s {background:#111; color:#777; padding:3px 5px; border:1px solid #333;}
+				#siteMap #s:focus {color:#FFF; border-color:#777;}
+			
+			/*- Copyright -*/	
+			#copyright {padding:12px 0 14px; margin-top:1px; background:#222; border-top:1px solid #2C2C2C;}
+				#copyright p {width:748px; padding-left:212px; color:#4D4D4D;}
+				#copyright a {color:#4D4D4D; border-bottom:1px dotted;}
+				#copyright a:hover {color:#FFF; border-color:#FFF;}
+			
+				
+/*- End Footer -------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- ERROR 404 PAGE ---------------------------------------------------------*/
+
+
+		#error404 {text-align:center; font-style:italic; padding:40px 0;}
+			#error404 h2 {color:#000; font-size:7em; font-weight:normal; letter-spacing:-0.05em; padding-bottom:20px;}
+			#error404 p {font-size:1.9em; color:#333;}
+			#error404 em {color:#666;}
+			#error404 a {color:#675F34; text-decoration:underline;}
+			#error404 a:hover {color:#990000;}
+			
+
+/*- End ERROR 404 PAGE -----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Inverted sidebar -------------------------------------------------------*/
+
+		
+		.invert #sidebar {float:right;}
+		.invert #content {float:left; padding:25px 20px 70px 0; border-left:0; border-right:3px double #DDD;}
+		
+
+/*- End Inverted sidebar ---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+/*- Full-width pages -------------------------------------------------------*/
+
+		
+		.full-width #content {float:none; width:auto; border:0;}
+			.page .full-width .postTitle h2 {padding-left:40px;}
+			.full-width .postEntry {float:none; width:860px; padding:30px 40px 20px;}
+			
+			
+/*- End Full-width pages ---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/

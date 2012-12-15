@@ -1,0 +1,56 @@
+/*
+Theme Name: Chateau
+Iphone styles
+*/
+
+		/*- Reset stuff -*/
+		* {float:none !important; overflow:visible !important; width:auto !important;}
+		#header, #main, #content, #sidebar, #aboutInfo, #siteMapList, #copyright p {width:80%; margin:0 5%;}	
+		#mainTitle, .postTitle h2, .postDate, .postExtras strong, .postEntry blockquote, .postEntry cite, .morePosts h3, .morePosts h4, .morePosts span,
+		#comments h3, #respond h3, #aboutInfo, #error404 {font-family:Times New Roman, Georgia, serif;}	
+		#content, #sidebar, .postTitle, #siteMap h5, #copyright, #comments h3 span, #respond, #respond form, .morePost ul, .postExtras {padding:0;}
+		#menu li, #menu a, .postExtras li {display:inline;}
+			
+		/*- Header -*/
+		#menu {text-align:center;}
+		#search {text-align:center; margin:20px auto;}
+		#mainImage img {width:100% !important; height:auto !important;}
+		#mainTitle * {text-align:center; line-height:130%;}
+		#mainTitle strong {display:block;}
+		
+		/*- Content -*/
+		#content {border:0;}
+		.postTitle h2 {padding:10px 0; border:0;}
+		.postInfo {padding:20px 0;}
+		.postDate {position:static; text-align:left; border-bottom:1px solid #CCC;}
+		.postDate * {display:inline; font-size:1.3em !important; letter-spacing:0; padding:0 3px 0 0; position:static;}
+		#comments h3 {margin:0; padding-left:0;}
+		#comments h3 span {position:static;}
+		#comments li {margin:0 !important;}
+		.morePosts li {min-height:0; margin:0 0 15px 0;}
+		.morePosts h3 {padding-left:20px;}
+		.postEntry img {max-width:100%;}
+		.morePosts ul {padding:20px 0;}
+		#respond form {padding-bottom:30px;}
+		#respond h3 {padding-left:10px;}
+		#respond label {padding:0 0 3px; display:block;}
+		#respond input {width:150px !important;}
+		#respond textarea {display:block; width:300px !important; height:70px !important;}
+		#respond button {margin:0;}	
+		#relatedPosts h3,
+		#relatedPosts ul {padding:20px 0 20px 10px;}
+		.postExtras {text-align:left;}
+		
+		/*- Sidebar -*/
+		#sidebar {padding-bottom:20px;}
+		
+		/*- Footer -*/
+		#aboutInfo {padding:35px 5%;}
+		#aboutInfo p {padding-right:0;}
+		#siteMap {padding-bottom:0;}
+		#siteMap ul {padding:5px 5% 20px;}
+		#siteMap ul ul {padding:3px 0 20px;}
+		#siteMap li {list-style:none; display:inline; margin-right:10px;}	
+		#copyright p {padding:15px 5%;}
+		
+		

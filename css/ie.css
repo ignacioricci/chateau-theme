@@ -1,0 +1,36 @@
+/*
+Theme Name: Chateau
+Internet Explorer Fixes
+*/
+
+
+		/*- IE6 -*/
+		* html .morePosts h3,
+		* html #mainTitle,
+		* html .postTitle,
+		* html .postDate,
+		* html .postExtras p,
+		* html .postExtras ul,
+		* html .commentHeading,
+		* html #respond p,
+		* html #comments h3,
+		* html .single .post {height:1%;}
+		* html .morePosts li {height:160px;}
+		* html #comments h3 {clear:both;}
+		* html #comments h3 span {line-height:170%; bottom:-60px; padding-top:0;}
+		* html .postDate {left:10px;}
+		* html #mainTitle h1 {line-height:350%; margin-top:83px;}
+		* html #mainImage {padding-top:10px;}
+		* html .postDate strong {padding-bottom:8px; position:relative; left:8px; background:#FFF;}
+		* html .postEntry ul, *+ html .postEntry ol {list-style:inside;}
+		* html #search {margin-right:5px;}
+		* html .postEntry img {width:expression(this.width > 526 ? 526: true);}
+				
+		/*- IE7 -*/
+		*+ html .postExtras ul {min-height:1%;}
+		*+ html #mainTitle h1 {line-height:350%; margin-top:83px;}
+		*+ html #mainImage {padding-top:10px;}
+		*+ html #comments h3 span {line-height:170%; bottom:-60px; padding-top:0;}
+		*+ html .postDate strong {padding-bottom:8px; position:relative; left:8px; background:#FFF;}
+		*+ html .postEntry ul, *+ html .postEntry ol {list-style:inside;}
+		*+ html #search {margin-right:5px;}
