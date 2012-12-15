@@ -16,7 +16,7 @@ if ( post_password_required() ) { ?>
 <?php if ( have_comments() ) : ?>
 
 <div id="comments">
-	<h3><span><?php echo getCommentCount(); ?></span> comments</h3>
+	<h3><?php comments_number('No comments', 'One Comment', '% Comments' ); ?></h3>
 	<ol>
 		<?php wp_list_comments('callback=chateau_comments&type=comment&avatar_size=20'); ?>
 	</ol>
