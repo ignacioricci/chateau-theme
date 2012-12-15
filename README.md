@@ -8,22 +8,22 @@ It’s build with pure XHTML/CSS. No images whatsoever! It focuses on getting th
 
 ## Features
 
-~ Crossbrowser
-~ Lightweight
-~ Widget-ready
-~ Iphone Compatible
-~ Print Compatible
-~ Custom header + custom header per post/page
-~ Custom Menus
-~ Custom avatar
+* Crossbrowser
+* Lightweight
+* Widget-ready
+* Iphone Compatible
+* Print Compatible
+* Custom header + custom header per post/page
+* Custom Menus
+* Custom avatar
 
 ## Browser Support
 
-~ Internet Explorer 6 and up
-~ Firefox 3 and up
-~ Opera 9 and up
-~ Safari 2 and up
-~ Google Chrome
+* Internet Explorer 6 and up
+* Firefox 3 and up
+* Opera 9 and up
+* Safari 2 and up
+* Google Chrome
 
 ## Home Posts Help
 
@@ -110,8 +110,8 @@ The About image was taken and belongs to albany_tim
 
 ## Future versions not yet developed (3.0)
 
-~ Internationalization (Chateau in your language)
-~ Flexible layout with Media Queries
+* Internationalization (Chateau in your language)
+* Flexible layout with Media Queries
 
 Enjoy the theme!
 
