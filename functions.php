@@ -38,26 +38,45 @@
 	}
 	
  	// ENABLE CUSTOM HEADER	 
-    add_action( 'after_setup_theme', 'chateau_setup' );
-    if ( ! function_exists('chateau_setup') ):
-   		function chateau_setup() {
-		    // This theme uses post thumbnails
-		    add_theme_support( 'post-thumbnails' );
-		    	define( 'HEADER_IMAGE', '%s/images/chateau-default.jpg' );
-		    	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'yourtheme_header_image_width', 960 ) );
-		    	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'yourtheme_header_image_height', 260 ) );
-		    	set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
-				define( 'NO_HEADER_TEXT', true );
-				add_custom_image_header( '', 'chateau_admin_header_style' );
-  		}
-    endif;   
-    if ( ! function_exists( 'chateau_admin_header_style' ) ) :
-		function chateau_admin_header_style() {
-	        echo '<style type="text/css">
-	          #headimg {height:' . HEADER_IMAGE_HEIGHT . 'px; width:' . HEADER_IMAGE_WIDTH . 'px;}
-	          #headimg h1, #headimg #desc {display:none;}
-	        </style>';
-    } endif;
+ 	if ($wp_version >= 3.4){
+ 		add_theme_support('post-thumbnails');
+		$himgoptions = array(
+			'default-image'          => get_template_directory_uri() . '/images/chateau-default.jpg',
+			'random-default'         => false,
+			'width'                  => 960,
+			'height'                 => 260,
+			'flex-height'            => false,
+			'flex-width'             => false,
+			'default-text-color'     => '',
+			'header-text'            => false,
+			'uploads'                => true,
+			'wp-head-callback'       => '',
+			'admin-head-callback'    => '',
+			'admin-preview-callback' => '',
+		);
+		add_theme_support('custom-header', $himgoptions);
+ 	} else {
+	    add_action('after_setup_theme', 'chateau_setup');
+	    if (!function_exists('chateau_setup')):
+	   		function chateau_setup() {
+			    	// This theme uses post thumbnails
+			    	add_theme_support('post-thumbnails');
+			    	define('HEADER_IMAGE', '%s/images/chateau-default.jpg' );
+			    	define('HEADER_IMAGE_WIDTH', apply_filters('chateau_header_image_width', 960));
+			    	define('HEADER_IMAGE_HEIGHT', apply_filters('chateau_header_image_height', 260));
+			    	set_post_thumbnail_size(HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true);
+					define('NO_HEADER_TEXT', true);
+					add_custom_image_header( '', 'chateau_admin_header_style' );
+	  		}
+	    endif;   
+	    if (!function_exists('chateau_admin_header_style')) :
+			function chateau_admin_header_style(){
+		        echo '<style type="text/css">
+		          #headimg {height:' . HEADER_IMAGE_HEIGHT . 'px; width:' . HEADER_IMAGE_WIDTH . 'px;}
+		          #headimg h1, #headimg #desc {display:none;}
+		        </style>';
+	    } endif;
+	}
     
     // ENABLE CUSTOM MENUS
     register_nav_menus(array('mainmenu'=>__('Main Menu'),));
