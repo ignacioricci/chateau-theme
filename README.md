@@ -4,7 +4,7 @@
 ## Theme Description
 
 Chateau is a lightweight & minimalistic WordPress Theme.
-It’s build with pure XHTML/CSS. No images whatsoever! It focuses on getting the content delivered in a fast and elegant way. The creation of Chateau consumed a lot of time and effort. Nonetheless, it’s super affordable. **Yoo got it for just 1.99 USD!**.
+It’s build with pure XHTML/CSS. No images whatsoever! It focuses on getting the content delivered in a fast and elegant way. The creation of Chateau consumed a lot of time and effort.
 
 ## Features
 
@@ -113,6 +113,6 @@ The About image was taken and belongs to albany_tim
 * Internationalization (Chateau in your language)
 * Flexible layout with Media Queries
 
-Enjoy the theme!
+### Copyright  ###
 
-~ Ignacio
+MIT license. Copyright © 2015 Ignacio Ricci.
